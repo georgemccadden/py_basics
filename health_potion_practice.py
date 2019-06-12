@@ -9,8 +9,7 @@ player_health = 50
 game_difficulty = 1
 
 potion_health = int(random.randint(25, 50) / game_difficulty)
-
-player_health = player_health + potion_health
+gplayer_health = player_health + potion_health
 
 print(player_health)
 
