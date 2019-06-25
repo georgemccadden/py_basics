@@ -3,10 +3,26 @@
 # I'll use coins as examples of classes and objects :
 
 class Penny: # Defining the class.
-  value = 1.00
-  color = "copper"
-  num_edges = 1
-  heads = True
+
+  def __init__(self, rare=False): # Defining a class method.
+    self.rare = rare
+
+    if self.rare:
+      self.value = 1.25
+    else:
+      self.value = 1.00
+
+
+    self.value = 1.00
+    self.color = "copper"
+    self.num_edges = 1
+    self.heads = True
+  
+  def rust(self):
+    self.color = "greenish"
+
+  def clean(self):
+    self.color = "gold"
 
 coin1 = Penny() # Instantiating the coin class to this coin1 object.
 
